@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PictureCollectionViewCell" customModule="组合图片" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AUU-bt-MhY">
+                        <rect key="frame" x="8" y="8" width="34" height="34"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aoy-b4-eGV">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gou_white" translatesAutoresizingMaskIntoConstraints="NO" id="Y3e-so-Nq7">
+                        <rect key="frame" x="25" y="25" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="ARM-S5-bIr"/>
+                            <constraint firstAttribute="height" constant="20" id="Xb3-sh-tL2"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Aoy-b4-eGV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2g1-bO-5CZ"/>
+                <constraint firstAttribute="trailingMargin" secondItem="AUU-bt-MhY" secondAttribute="trailing" id="AWu-Bb-Ewr"/>
+                <constraint firstAttribute="trailing" secondItem="Aoy-b4-eGV" secondAttribute="trailing" id="EKQ-NI-XMn"/>
+                <constraint firstItem="AUU-bt-MhY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="Fyc-qv-BLw"/>
+                <constraint firstAttribute="bottom" secondItem="Aoy-b4-eGV" secondAttribute="bottom" id="PuZ-eh-ddp"/>
+                <constraint firstAttribute="bottomMargin" secondItem="AUU-bt-MhY" secondAttribute="bottom" id="UrD-GB-KrU"/>
+                <constraint firstAttribute="bottom" secondItem="Y3e-so-Nq7" secondAttribute="bottom" constant="5" id="fEU-eb-Omm"/>
+                <constraint firstItem="AUU-bt-MhY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="h1U-AK-ZdA"/>
+                <constraint firstItem="Aoy-b4-eGV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lPV-HS-LWy"/>
+                <constraint firstAttribute="trailing" secondItem="Y3e-so-Nq7" secondAttribute="trailing" constant="5" id="zGj-ib-4hs"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonimg" destination="Y3e-so-Nq7" id="You-8z-a5w"/>
+                <outlet property="coverimg" destination="Aoy-b4-eGV" id="kWf-eg-XZJ"/>
+                <outlet property="imgView" destination="AUU-bt-MhY" id="FME-kf-R1n"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gou_white" width="65" height="64"/>
+    </resources>
+</document>
